@@ -1,0 +1,12 @@
+name: EP Lab Action
+description: A small action for learning inputs and bundled execution
+
+inputs:
+  project:
+    description: Project to greet
+    required: false
+    default: base
+
+runs:
+  using: node24
+  main: dist/index.js

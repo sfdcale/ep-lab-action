@@ -1,0 +1,21 @@
+name: Demo local action
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  demo:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out this action repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+
+      - name: Run the action from this checkout
+        uses: ./
+        with:
+          project: help
