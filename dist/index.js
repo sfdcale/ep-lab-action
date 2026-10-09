@@ -27562,7 +27562,7 @@ var exports = __webpack_exports__;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const core = __nccwpck_require__(7484);
 const project = core.getInput('project') || 'base';
-core.info(`Hello ${project} — lab v2`);
+core.info(`Hello ${project} — lab v3`);
 core.info(`Action runtime: ${process.version}`);
 
 })();
